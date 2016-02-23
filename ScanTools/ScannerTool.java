@@ -32,7 +32,7 @@ public class ScannerTool {
 
     public void scan() {
         ArrayList<Future<ScanResult>> futures = new ArrayList<>();
-        for (int i = portFrom; i < portTo; i++) {
+        for (int i = portFrom; i <= portTo; i++) {
             futures.add(scanPort(i));
         }
 

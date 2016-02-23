@@ -30,7 +30,7 @@ public class Tools {
     }
 
     public static boolean checkPortRange(int from, int to) {
-        return (from > 0 && from <= 65535 && from <= to) && (to > 0 && to <= 65535 || to >= from);
+        return (from > 0 && from <= 65535 && from <= to) && (to > 0 && to <= 65535 && to >= from);
     }
 
     public static String[][] treeMapToStringArray(TreeMap<String, String> map) {
